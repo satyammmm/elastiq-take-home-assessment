@@ -1,26 +1,18 @@
-# QA Selenium Automation with Python
+# QA Selenium Test for Table Search Demo
 
-## Objective
-Create a Selenium automation script in Python to validate search functionality on the **Selenium Playground** website.
+This project contains a test script (`qa_selenium_test.py`) that automates the following steps using Python's Selenium:
 
-> [!NOTE]
-> **Deliverables:**
-> 1. A Python script (`qa_selenium_test.py`) that:
->    - Navigates to the [Selenium Playground Table Search Demo](https://www.lambdatest.com/selenium-playground/table-sort-search-demo).
->    - Locates and interacts with the search box to search for "New York".
->    - Validates that the search results show **5 entries out of 24 total entries**.
-> 2. A brief **README** explaining the approach and how to run the script.
-> 3. Any additional setup instructions (e.g., local environment, dependencies, drivers etc).
+- Navigates to the Selenium Playground Table Search Demo.
+- Locates and interacts with the search box to search for "New York".
+- Validates that the search results show exactly 5 entries out of 24 total entries.
 
-> [!TIP]
-> Use Python's `pytest` framework to structure your test cases.
+## Requirements
 
-> [!IMPORTANT]
-> - **Environment Setup:** Follow good coding practices and ensure the script is compatible with the latest stable Selenium version.
-> - **Browser Compatibility:** Test with at least one major browser (e.g., Chrome, Firefox).
+To run this test, you need to have the following installed:
 
-> [!CAUTION]
-> - **Assertions:** Ensure all validations use robust assertion statements.
-> - **Code Quality:** Follow PEP8 standards for Python code.
-
-**Good luck!**
+1. ChromeDriver (or any other WebDriver for your browser)
+   - [Download ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+   - Ensure the `chromedriver` is in your system's PATH or specify its location in the `qa_selenium_test.py` script.
+2. Install required Python packages:
+   ```bash
+   pip install selenium pytest
